@@ -5,4 +5,4 @@ before_install:
 before_script:
   - nuget restore kvadratnoye_lab2_tp.sln
 after_script:
-  - nunit-console UnitTest_lab_2/bin/Debug/UnitTest_lab_2.dll
+  - nunit-console kvadratnoye_lab2_tp/UnitTest_lab_2/bin/Debug/UnitTest_lab_2.dll
