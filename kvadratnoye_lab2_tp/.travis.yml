@@ -1,0 +1,8 @@
+language: csharp
+solution: kvadratnoye_lab2_tp.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore kvadratnoye_lab2_tp.sln
+after_script:
+  - nunit-console UnitTest_lab_2/bin/Debug/UnitTest_lab_2.dll
