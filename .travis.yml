@@ -5,5 +5,5 @@ install:
   - sudo apt-get install nunit-console
   - nuget restore kvadratnoye_lab2_tp/kvadratnoye_lab2_tp.sln
 script:
-  - xbuild 
+  - xbuild kvadratnoye_lab2_tp/kvadratnoye_lab2_tp.sln
   - nunit-console kvadratnoye_lab2_tp/UnitTest_lab_2/bin/Debug/UnitTest_lab_2.dll
