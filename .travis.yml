@@ -1,9 +1,10 @@
 language: csharp
-sudo: required 
-solution: kvadratnoye_lab2_tp/kvadratnoye_lab2_tp.sln
+solution: ./kvadratnoye_lab2_tp/kvadratnoye_lab2_tp.sln
+ 
 install:
   - sudo apt-get install nunit-console
-  - nuget restore kvadratnoye_lab2_tp/kvadratnoye_lab2_tp.sln
+  - nuget restore ./kvadratnoye_lab2_tp/kvadratnoye_lab2_tp.sln
+ 
 script:
-  - xbuild kvadratnoye_lab2_tp/kvadratnoye_lab2_tp.sln
-  - nunit-console kvadratnoye_lab2_tp/UnitTest_lab_2/bin/Debug/UnitTest_lab_2.dll
+  - xbuild ./kvadratnoye_lab2_tp/kvadratnoye_lab2_tp.sln
+  - nunit-console ./kvadratnoye_lab2_tp/UnitTest_lab_2/bin/Debug/UnitTest_lab_2.dll
